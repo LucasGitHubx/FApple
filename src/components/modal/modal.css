@@ -1,0 +1,71 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.432);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1111111;
+}
+.modal p {
+  color: black;
+}
+.modal .message {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 12px;
+
+  position: absolute;
+  bottom: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.modal button {
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  height: 33px;
+  padding: 8px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid var(--black, #08090a);
+  background: var(--black, #08090a);
+
+  transition: 0.2s;
+}
+.modal button:hover {
+  opacity: 0.9;
+}
+.modal button:active {
+  opacity: 0.8;
+}
+
+@media (min-width: 1440px) {
+  .modal .message {
+    width: 350px;
+    height: fit-content;
+    padding: 2rem;
+
+    gap: 2rem;
+
+    bottom: 300px;
+  }
+
+  .modal p {
+    font-size: 1.3rem;
+  }
+}

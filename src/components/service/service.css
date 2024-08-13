@@ -1,0 +1,73 @@
+.service {
+  cursor: pointer;
+  /* width: 90%;*/
+  background-color: white;
+  color: black;
+  width: 254px;
+  height: 338px;
+  padding: 33px 31px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: justify-content;
+  gap: 37px;
+  flex-shrink: 0;
+}
+.service h2 {
+  color: black;
+}
+.service p {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+.service button {
+  cursor: pointer;
+  display: flex;
+  height: 33px;
+  padding: 5px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid var(--black, #08090a);
+  background: var(--black, #08090a);
+
+  transition: 0.2s;
+}
+.service button:hover {
+  opacity: 0.9;
+}
+.service button:active {
+  opacity: 0.8;
+}
+
+.service .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .service {
+    display: flex;
+    width: 398px;
+    height: 282px;
+    padding: 33px 31px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 37px;
+    flex-shrink: 0;
+  }
+  .service .title {
+    gap: 1rem;
+  }
+  .service h2 {
+    font-size: 2rem;
+  }
+  .service p {
+    text-align: left;
+  }
+}

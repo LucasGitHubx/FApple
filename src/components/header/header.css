@@ -1,0 +1,22 @@
+:root {
+  --gray: #bebdbd;
+  --black: #08090a;
+  --white: #f4f7f5;
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray);
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h2 {
+  font-size: 2rem;
+}

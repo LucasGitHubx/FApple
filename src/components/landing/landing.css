@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --gray: #bebdbd;
+  --black: #08090a;
+  --white: #f4f7f5;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing img {
+  width: 309px;
+  height: 204px;
+  flex-shrink: 0;
+}
+.landing .text {
+  text-align: center;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing .text h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.landing .text button {
+  cursor: pointer;
+  border-radius: 12px;
+  border: 0.6px solid var(--white, #f4f7f5);
+  background-color: transparent;
+  font-size: 1rem;
+
+  display: flex;
+  padding: 10px 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.3s;
+}
+
+.landing .text button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+@media (min-width: 1440px) {
+  .landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing .text {
+    text-align: left;
+    gap: 5rem;
+
+    display: flex;
+    flex-direction: rowe;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .landing .text h2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .landing .text p {
+    color: #fff;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .landing img {
+    width: 636px;
+    height: 421px;
+  }
+}

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --gray: #bebdbd;
+  --black: #08090a;
+  --white: #f4f7f5;
+}
+.feature {
+  border-radius: 12px;
+  border: 0.5px solid var(--white, #f4f7f5);
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  gap: 3rem;
+
+  transition: 0.5s;
+}
+.feature:hover {
+  transform: scale(1.02);
+}
+.feature h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.feature p {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+@media (min-width: 1400px) {
+  .feature {
+    width: 349px;
+    height: 513px;
+    flex-shrink: 0;
+  }
+}
